@@ -1,0 +1,26 @@
+.icon {
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-image: url(sprite.svg);
+}
+.icon-vibeslogo-1 {
+  width: 36px;
+  height: 32px;
+  background-position: 0 0;
+}
+.icon-vibesyoutube {
+  width: 32px;
+  height: 32px;
+  background-position: -48px 0;
+}
+.icon-vibesinstagram {
+  width: 32px;
+  height: 32px;
+  background-position: -96px 0;
+}
+.icon-vibesfacebook {
+  width: 32px;
+  height: 32px;
+  background-position: -144px 0;
+}
+
