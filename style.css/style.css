@@ -189,7 +189,7 @@ padding-right: 32px;}}
     gap: 16px;
     position:absolute;
     top: 5px;
-    right: 15px;}
+    right: 0;}
     .hero-startext
     {color: rgba(252, 249, 249, 0.40);
         text-align: center;
@@ -207,8 +207,8 @@ padding-right: 32px;}}
     background-repeat: no-repeat;
     background-position: right bottom;
     position:absolute;
-    bottom: -126px;
-    right: 15px;}}
+    bottom: 490px;
+    right: 0;}}
     
     @media screen and (min-width: 1280px){
         .hero{display: flex;
