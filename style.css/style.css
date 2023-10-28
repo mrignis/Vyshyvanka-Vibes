@@ -246,7 +246,7 @@ align-items: center;}
     min-width: 392px;
     max-height: 545px;
     border-radius: 4px;
-    background: url(../image/girl-1440.jpg) lightgray -56.27px -5.605px / 131.835% 126.432% ;
+    background: url(../image/girl-1440.jpg) -56.27px -5.605px / 131.835% 126.432% ;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -402,7 +402,7 @@ margin: 0;
 .small-ima{ 
         width: 139px;
         height: 171px;
-        background: url(../image/cofta.jpg), lightgray -2.066px -19.213px / 105.126% 113.938% no-repeat;
+        background: url(../image/cofta.jpg);
         background-repeat: no-repeat;
         background-position: right bottom;
         position: absolute;
