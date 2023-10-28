@@ -320,7 +320,7 @@ position: relative;
   }
 .hero-title{ display: flex;
 flex-direction: column;
-justify-content: center;
+justify-content: flex-start;
 align-items: center;}
 .hero-text{margin-left: 40px;
     text-align: left;
@@ -368,7 +368,7 @@ cursor: pointer;
     flex-direction: column;
     align-items: center;
     gap: 16px;
-    top: 130px;
+    top: 0;
     right: 0;}
 .hero-icon{
     fill:  #ECD979;
