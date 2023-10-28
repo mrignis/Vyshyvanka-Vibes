@@ -15,8 +15,10 @@ div{margin: 0;
   h1, h2, h3, h4, h5, h6, p {
 margin: 0;
 }
+img{display:block;
+    width: 100%;}
 a{text-decoration: none;}
-body{margin: 0 auto;
+body{margin: 0 ;
    padding: 0;
     background-color: #1C2225;}
 .container{ 
@@ -26,7 +28,7 @@ body{margin: 0 auto;
     /*hero*/
 @media screen and (min-width: 320px)
 {.hero{
-   
+    min-width: 320px;
     display: flex;
     justify-content: center;
     padding-top:60px ;
@@ -44,7 +46,8 @@ justify-content: center;
 display: flex;
 align-items: center;}
 .hero-title-parth{display: flex;
-justify-content: center;}
+justify-content: center;
+flex-direction: column;}
 .hero-star{display: none;}
 .small-ima{display: none;}
 .hero-title{display: flex;
@@ -70,7 +73,7 @@ align-items: center;}
 .title-button{
     margin-top: 20px;
     display: flex;
-    max-width: 154px;
+    width: 154px;
     height: 49px;
     padding: 14px 36px;
     justify-content: center;
@@ -86,7 +89,7 @@ align-items: center;}
     font-style: normal;
     font-weight: 600;
     line-height: normal;
-    letter-spacing: -0.56px;
+    letter-spacing: -0.04em;
     text-transform: uppercase;}
 .title-button:hover,
 .title-button:focus,
@@ -104,22 +107,23 @@ align-items: center;}
 }}
 
     @media screen and (min-width:768px){
-        .hero{
+        .hero{min-width: 768px;
             display: flex;
         justify-content: center;
+        margin: 0;
             padding-top:60px;
-            padding-bottom: 80px;}}
+            padding-bottom: 80px;
+            padding-left: 32px;
+padding-right: 32px;}}
 @media screen and (min-width:768px){
 .container{
-    min-width: 768px;
-    padding-left: 32px;
-padding-right: 32px;
-margin: 0;}
+    width: 768px;
+    padding: 0;
+    margin: 0;}
 .container-hero {
-        flex-direction: row;
         justify-content: center;
         display: flex;
-        align-items: baseline;
+        align-items:flex-start;
     }
 .hero-title-parth{
         display: flex;
@@ -127,6 +131,27 @@ margin: 0;}
         align-items: flex-start;
         flex-direction: column;
     }
+.hero-title{display: flex;
+    justify-content: center;
+    align-items: flex-start;}
+.title-button{
+    margin-left: 143px;
+    width: 168px;
+    padding: 14px 39px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: #1C2225;
+    border-radius: 15px;
+    border: 1px solid rgba(252, 249, 249, 0.10);
+    color: #FCF9F9;
+    font-family: Manrope;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -0.04em;
+    text-transform: uppercase;}
 .hero-image{
     min-width: 413px;
     min-height: 575px;
@@ -136,9 +161,9 @@ margin: 0;}
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
+    
 }
 .hero-text{
-    margin-right: 40px;
     width: 549px;
     color: #FCF9F9;
     font-family: Manrope;
@@ -153,36 +178,130 @@ margin: 0;}
     font-style: normal;
     font-weight: 400;
     line-height: 1.18;
-    letter-spacing: 0.03em;}
+    letter-spacing:0.03em;}
 
-    .hero-star{ width: 115px;
-        margin-left: 40px;
+    .hero-star{ 
+        width: 115px;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    gap: 16px;}
+    gap: 16px;
+    position:absolute;
+    top: 5px;
+    right: 15px;}
 .small-ima{
-    display: block;
+    display: flex;
     width: 139px;
     height: 197px;
     background-image: url(../image/cofta.jpg);
     background-repeat: no-repeat;
     background-position: right bottom;
-    position: absolute;
+    position:absolute;
     bottom: -115px;
-    right: 0;}
-
-
+    right: 15px;}
     }
+    @media screen and (min-width: 1280px){
+        .hero{display: flex;
 
+        min-width:  1280px;
+        padding-top: 100px; 
+        padding-left: 100px;
+        padding-right: 100px;
+    }}
+@media screen and (min-width: 1280px){
+.container{
+    width:  1280px;
+    padding: 0;
+    margin: 0;}
+.container-hero {
+    justify-content: center;
+    display: flex;
+    align-items:flex-start;
+    }
+.hero-title-parth{
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-direction: row-reverse;
+}
+.hero-title{ display: flex;
+    margin-right: 0;
+    margin-top: 66px;
+flex-direction: column;
+justify-content: flex-start;
+align-items: center;}
+.hero-image{
+    margin: 0;
+    margin-right: 40px;
+    min-width: 392px;
+    max-height: 545px;
+    border-radius: 4px;
+    background: url(../image/girl-1440.jpg) lightgray -56.27px -5.605px / 131.835% 126.432% ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+.hero-text{
+    min-width: 518px;
+    color: #FCF9F9;
+    font-family: Manrope;
+    font-size: 54px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.18; /* 118.519% */
+    letter-spacing: 0.03em;}
+.title-button{
+    margin: 0;
+    margin-top:40px ;
+    display: flex;
+width: 168px;
+padding: 14px 39px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+border-radius: 15px;
+border: 1px solid rgba(252, 249, 249, 0.10);
+color: #FCF9F9;
+font-family: Manrope;
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+letter-spacing: 0.04em;
+text-transform: uppercase;
+}
+.hero-star{   
+    width: 115px;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    position: absolute;
+    top: 100px;
+    right: -95px;}
+.small-ima{ display: block;
+    width: 139px;
+    background: url(../image/cofta.jpg),  -2.066px -19.213px / 105.126% 113.938% no-repeat;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    position: absolute;
+    bottom: 135px;
+    right: -95px;
+   
+}}
 @media screen and (min-width: 1440px){
 .hero{
+    min-width: 1440px;
     padding-top: 100px; 
     padding-left: 100px;
     padding-right: 100px;
-    position: relative;
 }
+.container{
+    width:  1440px;
+    padding: 0;
+    margin: 0;}
 .container-hero{
 justify-content: center;
 display: flex;
@@ -191,7 +310,6 @@ position: relative;
 }
 .hero-image{
     margin: 0;
-    margin-right: 40px;
     width: 392px;
     height: 545px;
     border-radius: 4px;
@@ -201,12 +319,10 @@ position: relative;
     background-position: center center;
   }
 .hero-title{ display: flex;
-    margin-right: 0;
-    margin-top: 66px;
 flex-direction: column;
 justify-content: center;
 align-items: center;}
-.hero-text{
+.hero-text{margin-left: 40px;
     text-align: left;
     width: 632px;
     height: 222px;
@@ -245,14 +361,15 @@ cursor: pointer;
     transform: rotate(-10deg);
 }
 .hero-star{
-    margin-left: 61px;
-    margin-top: 66px;
+   margin: 0;
     width: 115px;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    gap: 16px;}
+    gap: 16px;
+    top: 130px;
+    right: 0;}
 .hero-icon{
     fill:  #ECD979;
     }
