@@ -26,8 +26,9 @@ body{margin: 0 auto;
     /*hero*/
 @media screen and (min-width: 320px)
 {.hero{
-    width: 320px;
+   
     display: flex;
+    justify-content: center;
     padding-top:60px ;
     padding-bottom: 80px;}
     }
@@ -42,23 +43,14 @@ flex-direction: column-reverse;
 justify-content: center;
 display: flex;
 align-items: center;}
+.hero-title-parth{display: flex;
+justify-content: center;}
 .hero-star{display: none;}
 .small-ima{display: none;}
 .hero-title{display: flex;
 justify-content: center;
 flex-direction: column;
 align-items: center;}
-
-}
-.hero-star{
-    margin-left: 61px;
-    margin-top: 66px;
-    width: 115px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-     gap: 16px;}
 .hero-text{
     width: 335px;
     color: #FCF9F9;
@@ -106,32 +98,82 @@ align-items: center;}
     height: 545px;
     flex-shrink: 0;
     border-radius: 4px;
-    background: url(../image/girl-m.jpg), lightgray 50% / cover no-repeat;}}
+    background-repeat: no-repeat;
+    background-position: center center;
+    background: url(../image/girl-m.jpg), lightgray 50%;
+}}
 
     @media screen and (min-width:768px){
         .hero{
-            width: 768px;
             display: flex;
+        justify-content: center;
             padding-top:60px;
             padding-bottom: 80px;}}
 @media screen and (min-width:768px){
 .container{
-    width: 768px;
+    min-width: 768px;
     padding-left: 32px;
 padding-right: 32px;
 margin: 0;}
 .container-hero {
-        flex-direction: column-reverse;
+        flex-direction: row;
         justify-content: center;
         display: flex;
-        align-items: center;
+        align-items: baseline;
     }
 .hero-title-parth{
         display: flex;
-        display: flex;
         justify-content: center;
-        align-items: baseline;
+        align-items: flex-start;
+        flex-direction: column;
     }
+.hero-image{
+    min-width: 413px;
+    min-height: 575px;
+    flex-shrink: 0;
+    border-radius: 4px;
+    background: url(../image/girl-t.jpg) lightgray -59.284px -5.913px / 131.835% 126.432% no-repeat;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.hero-text{
+    margin-right: 40px;
+    width: 549px;
+    color: #FCF9F9;
+    font-family: Manrope;
+    font-size: 54px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.18; /* 118.519% */
+    letter-spacing: -0.03em}
+.title-span{color: #ECD979;
+    font-family: Manrope;
+    font-size: 54px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.18;
+    letter-spacing: 0.03em;}
+
+    .hero-star{ width: 115px;
+        margin-left: 40px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;}
+.small-ima{
+    display: block;
+    width: 139px;
+    height: 197px;
+    background-image: url(../image/cofta.jpg);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    position: absolute;
+    bottom: -115px;
+    right: 0;}
+
+
     }
 
 @media screen and (min-width: 1440px){
@@ -201,7 +243,7 @@ cursor: pointer;
 .icon-btn{width: 26px;
     height: 10px;
     transform: rotate(-10deg);
-   }
+}
 .hero-star{
     margin-left: 61px;
     margin-top: 66px;
@@ -224,6 +266,14 @@ cursor: pointer;
     line-height: normal;
     letter-spacing: 0.04em;}
 .small-ima { 
-   
+        width: 139px;
+        height: 171px;
+        background-image: url(../image/cofta.jpg);
+        background-repeat: no-repeat;
+        background-position: right bottom;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+      }
+      
     }
-}
