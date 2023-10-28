@@ -208,7 +208,7 @@ padding-right: 32px;}}
     background-position: right bottom;
     position:absolute;
     bottom: -126px;
-    right: 15px;}
+    right: 15px;}}
     
     @media screen and (min-width: 1280px){
         .hero{display: flex;
@@ -307,16 +307,16 @@ text-transform: uppercase;
     position: absolute;
     bottom: 135px;
     right: -95px;
-   
 }}
-@media screen and (min-width: 1440px){
-.hero{
+
+@media screen and (min-width: 1440px)
+{.hero{
     min-width: 1440px;
     padding-top: 100px; 
     padding-left: 100px;
     padding-right: 100px;
-}
-.container{
+}}
+@media screen and (min-width: 1440px){.container{
     width:  1440px;
     padding: 0;
     margin: 0;}
@@ -325,8 +325,8 @@ justify-content: center;
 display: flex;
 align-items:flex-start;
 position: relative;
-}
-.hero-image{
+}}
+@media screen and (min-width: 1440px){.hero-image{
     margin: 0;
     width: 392px;
     height: 545px;
@@ -334,8 +334,7 @@ position: relative;
     background: url(../image/girl-1440.jpg) lightgray -56.27px -5.605px / 131.835% 126.432% ;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center center;
-  }
+    background-position: center center;}
 .hero-title{ display: flex;
 flex-direction: column;
 justify-content: flex-start;
@@ -354,15 +353,15 @@ align-items: center;}
 .title-span{color: #ECD979;}
 
 .title-button{
-    margin-top: 40px;
-    display: flex;
-    width: 168px;
-    padding: 14px 39px;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    border-radius: 15px;
-    border: 1px solid rgba(252, 249, 249, 0.10);
+margin-top: 40px;
+display: flex;
+width: 168px;
+padding: 14px 39px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+border-radius: 15px;
+border: 1px solid rgba(252, 249, 249, 0.10);
 background-color: #1C2225;
 color: #FCF9F9;
 font-family: Manrope;
@@ -379,7 +378,7 @@ cursor: pointer;
     transform: rotate(-10deg);
 }
 .hero-star{
-   margin: 0;
+margin: 0;
     width: 115px;
     display: flex;
     justify-content: center;
@@ -400,15 +399,12 @@ cursor: pointer;
     font-weight: 400;
     line-height: normal;
     letter-spacing: 0.04em;}
-.small-ima { 
+.small-ima{ 
         width: 139px;
         height: 171px;
-        background-image: url(../image/cofta.jpg);
+        background: url(../image/cofta.jpg), lightgray -2.066px -19.213px / 105.126% 113.938% no-repeat;
         background-repeat: no-repeat;
         background-position: right bottom;
         position: absolute;
-        bottom: 0;
-        right: 0;
-      }
-      
-    }
+        bottom: 0px;
+        right: 0px;}}
