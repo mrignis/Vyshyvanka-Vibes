@@ -119,12 +119,16 @@ padding-right: 32px;}}
 .container{
     width: 768px;
     padding: 0;
-    margin: 0;}
+    margin: 0 auto;}
 .container-hero {
-        justify-content: center;
         display: flex;
-        align-items:flex-start;
+        align-items:center;
+       
     }
+.hero-title-parth-zero{display: flex;
+    align-items:flex-start;
+    flex-direction: row;
+    position: relative;}
 .hero-title-parth{
         display: flex;
         justify-content: center;
@@ -180,16 +184,18 @@ padding-right: 32px;}}
     line-height: 1.18;
     letter-spacing:0.03em;}
 
+.hero-title-parth-two{display: flex;
+    margin: 0;
+flex-direction: column;
+align-items: center;}
     .hero-star{ 
-        width: 115px;
+        margin: 0 auto;
+        max-width: 115px;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    gap: 16px;
-    position:absolute;
-    top: 5px;
-    right: 0;}
+    gap: 16px;}
     .hero-startext
     {color: rgba(252, 249, 249, 0.40);
         text-align: center;
@@ -199,20 +205,20 @@ padding-right: 32px;}}
         font-weight: 400;
         line-height: normal;
         letter-spacing: 0.03em;}
-.small-ima{
-    display: flex;
-    width: 139px;
-    height: 197px;
-    background-image: url(../image/cofta.jpg);
-    background-repeat: no-repeat;
-    background-position: right bottom;
-    position:absolute;
-    bottom: 470px;
-    right: 0;}}
+        .small-ima {
+        display: block;
+            min-width: 139px;
+           height: 197px;
+            background-image: url(../image/cofta.jpg);
+            background-repeat: no-repeat;
+            background-position: right bottom;
+            position: absolute;
+            bottom: 0;
+        }}
+          
     
     @media screen and (min-width: 1280px){
         .hero{display: flex;
-
         min-width:  1280px;
         padding-top: 100px; 
         padding-left: 100px;
@@ -226,8 +232,21 @@ padding-right: 32px;}}
 .container-hero {
     justify-content: center;
     display: flex;
-    align-items:flex-start;
+    align-items:stretch;
     }
+    .container-hero {
+        display: flex;
+        align-items:center;
+    }
+    .hero-title-parth-zero{display: flex;
+        align-items:flex-start;
+        flex-direction: row;
+        position: relative;}
+.hero-title-parth-one{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+}
 .hero-title-parth{
     display: flex;
     justify-content: center;
@@ -288,8 +307,7 @@ text-transform: uppercase;
     align-items: center;
     gap: 16px;
     position: absolute;
-    top: 100px;
-    right: -95px;}
+    top: 0;}
     
 .hero-startext{color: rgba(252, 249, 249, 0.40);
         text-align: center;
@@ -305,8 +323,8 @@ text-transform: uppercase;
     background-repeat: no-repeat;
     background-position: right bottom;
     position: absolute;
-    bottom: 738px;
-    right: -95px;
+    bottom: 0;
+    
 }}
 
 @media screen and (min-width: 1440px)
@@ -323,10 +341,15 @@ text-transform: uppercase;
 .container-hero{
 justify-content: center;
 display: flex;
-align-items:flex-start;
-position: relative;
+align-items:center;
 }}
-@media screen and (min-width: 1440px){.hero-image{
+@media screen and (min-width: 1440px){
+.hero-title-parth-zero{
+    position: relative;
+    justify-content: center;
+    display: flex;
+    align-items:center;}
+    .hero-image{
     margin: 0;
     width: 392px;
     height: 545px;
@@ -377,16 +400,21 @@ cursor: pointer;
     height: 10px;
     transform: rotate(-10deg);
 }
+.hero-title-parth-two {
+    display: flex;
+    margin: 0;
+    flex-direction: column;
+    align-items: flex-start;
+}
 .hero-star{
-margin: 0;
+    margin-top: 70px;
     width: 115px;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
     gap: 16px;
-    top: 0;
-    right: 0;}
+   }
 .hero-icon{
     fill:  #ECD979;
     }
@@ -399,12 +427,10 @@ margin: 0;
     font-weight: 400;
     line-height: normal;
     letter-spacing: 0.04em;}
-.small-ima{ 
+.small-ima{
         width: 139px;
         height: 171px;
         background: url(../image/cofta.jpg);
         background-repeat: no-repeat;
         background-position: right bottom;
-        position: absolute;
-        bottom: 0px;
-        right: 0px;}}
+       }}
